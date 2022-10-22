@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="new_account">New Account</string>
+    <string name="insert_team">Insert Team</string>
+    <string name="partidos_jugados">Partidos jugados</string>
+    <string name="partidos_ganados">Partidos ganados</string>
+    <string name="partidos_empatados">Partidos empatados</string>
+    <string name="partidos_perdidos">Partidos perdidos</string>
+    <string name="diferencia_de_goles">Diferencia de goles</string>
+    <string name="maximo_goleador">Máximo goleador</string>
+    <string name="m_ximo_asistidor">Máximo asistidor</string>
+    <string name="equipos_favoritos">Equipos Favoritos</string>
+    <string name="insert_league_1">Insert league 1</string>
+    <string name="insert_league_2">Insert league 2</string>
+    <string name="ligas_favoritas">Ligas Favoritas</string>
+</resources>

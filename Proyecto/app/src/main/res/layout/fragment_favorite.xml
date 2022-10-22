@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#323232"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewTeam"
+            android:layout_width="158dp"
+            android:layout_height="141dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/escudofcb"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageViewPlayer1"
+            android:layout_width="107dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGoals"
+            app:srcCompat="@drawable/lewa"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageViewPlayer2"
+            android:layout_width="107dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPlayer1"
+            app:srcCompat="@drawable/dem"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewNameTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/insert_team"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewTeam" />
+
+        <TextView
+            android:id="@+id/textViewMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="276dp"
+            android:text="@string/partidos_jugados"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/partidos_ganados"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMatch" />
+
+        <TextView
+            android:id="@+id/textViewDraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/partidos_empatados"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWins" />
+
+        <TextView
+            android:id="@+id/textViewLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/partidos_perdidos"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDraw" />
+
+        <TextView
+            android:id="@+id/textViewGoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/diferencia_de_goles"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLose" />
+
+        <TextView
+            android:id="@+id/textViewMaxGoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/maximo_goleador"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPlayer1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGoals" />
+
+        <TextView
+            android:id="@+id/textViewMaxAssist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/m_ximo_asistidor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/List"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPlayer2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMaxGoals" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
