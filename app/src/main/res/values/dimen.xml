@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="List">22sp</dimen>
+    <dimen name="Header">28sp</dimen>
+    <dimen name= "MarginN">8dp</dimen>
+    <dimen name= "ben">10dp</dimen>
+    <dimen name= "zero">0dp</dimen>
+    <dimen name= "letra">24sp</dimen>
+    <dimen name= "NewsH">100dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Names">TODO</string>
+    <string name="insert_team">Insert Team</string>
+    <string name="partidos_ganados">Partidos Ganados</string>
+    <string name="partidos_jugados">Partidos Jugados</string>
+    <string name="partidos_perdidos">Partidos Perdidos</string>
+    <string name="partidos_empatados">Partidos Empatados</string>
+    <string name="diferencia_de_goles">Diferencia de Goles</string>
+    <string name="m_ximo_goleador">Máximo Goleador</string>
+    <string name="m_ximo_asistidor">Máximo Asistidor</string>
+    <string name="todo">TODO</string>
+    <string name="Jugador1">TODO</string>
+    <string name="equipos_favoritos">Equipos Favoritos</string>
+    <string name="ligas_favoritas">Ligas favoritas</string>
+    <string name="insert_ligue_2">Insert Ligue 2</string>
+    <string name="insert_ligue_1">Insert Ligue 1</string>
+    <string name="Ligafav1">TODO</string>
+    <string name="Ligafav3">TODO</string>
+    <string name="Ligafav4">TODO</string>
+    <string name="LigaFav1">TODO</string>
+    <string name="Ligafav2">TODO</string>
+    <string name="EquipoFav4">TODO</string>
+    <string name="escoge_tus_equipos_favoritos">Escoge tus equipos favoritos</string>
+    <string name="escoge_tus_ligas_favoritas">Escoge tus ligas favoritas</string>
+    <string name="source_image">TODO</string>
+    <string name="demo">Demo</string>
+    <string name="title_activity_list_news">ListNewsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="author">Author</string>
+    <string name="title">Title</string>
+    <string name="authorr">Author</string>
+    <string name="titlee">Title</string>
+    <string name="article_image">TODO</string>
+</resources>
