@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">listview</string>
+    <string name="fc_barcelona">Fc Barcelona</string>
+    <string name="liga_espa_ola">Liga Española</string>
+</resources>
