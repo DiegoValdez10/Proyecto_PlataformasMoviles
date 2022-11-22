@@ -3,38 +3,131 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph2"
-    app:startDestination="@id/homeFragment">
-
+    app:startDestination="@id/listFragment">
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.proyecto.ui.fragments.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_fragmentPSG"
+            app:destination="@id/fragmentPSG" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentRealMadrid"
+            app:destination="@id/fragmentRealMadrid" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentArsenal"
+            app:destination="@id/fragmentArsenal" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentMilan"
+            app:destination="@id/fragmentMilan" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentBarcelona"
+            app:destination="@id/fragmentBarcelona" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentNapoli"
+            app:destination="@id/fragmentNapoli" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentBayern"
+            app:destination="@id/fragmentBayern" />
+        <action
+            android:id="@+id/action_listFragment_to_fragmentManCity"
+            app:destination="@id/fragmentManCity" />
+        <action
+            android:id="@+id/action_listFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentArsenal"
+        android:name="com.example.proyecto.ui.equipos.FragmentArsenal"
+        android:label="fragment_arsenal"
+        tools:layout="@layout/fragment_arsenal" >
+        <action
+            android:id="@+id/action_fragmentArsenal_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBarcelona"
+        android:name="com.example.proyecto.ui.equipos.FragmentBarcelona"
+        android:label="fragment_barcelona"
+        tools:layout="@layout/fragment_barcelona" >
+        <action
+            android:id="@+id/action_fragmentBarcelona_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBayern"
+        android:name="com.example.proyecto.ui.equipos.FragmentBayern"
+        android:label="fragment_bayern"
+        tools:layout="@layout/fragment_bayern" >
+        <action
+            android:id="@+id/action_fragmentBayern_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentManCity"
+        android:name="com.example.proyecto.ui.equipos.FragmentManCity"
+        android:label="fragment_mancity"
+        tools:layout="@layout/fragment_mancity" >
+        <action
+            android:id="@+id/action_fragmentManCity_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMilan"
+        android:name="com.example.proyecto.ui.equipos.FragmentMilan"
+        android:label="fragment_milan"
+        tools:layout="@layout/fragment_milan" >
+        <action
+            android:id="@+id/action_fragmentMilan_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNapoli"
+        android:name="com.example.proyecto.ui.equipos.FragmentNapoli"
+        android:label="fragment_napoli"
+        tools:layout="@layout/fragment_napoli" >
+        <action
+            android:id="@+id/action_fragmentNapoli_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPSG"
+        android:name="com.example.proyecto.ui.equipos.FragmentPSG"
+        android:label="fragment_psg"
+        tools:layout="@layout/fragment_psg" >
+        <action
+            android:id="@+id/action_fragmentPSG_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRealMadrid"
+        android:name="com.example.proyecto.ui.equipos.FragmentRealMadrid"
+        android:label="fragment_realmadrid"
+        tools:layout="@layout/fragment_realmadrid" >
+        <action
+            android:id="@+id/action_fragmentRealMadrid_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.proyecto.HomeFragment"
+        android:name="com.example.proyecto.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+            android:id="@+id/action_homeFragment_to_news_fragment"
+            app:destination="@id/news_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.proyecto.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
+        android:id="@+id/news_fragment"
+        android:name="com.example.proyecto.ui.fragments.News_fragment"
+        android:label="fragment_news_fragment"
+        tools:layout="@layout/fragment_news_fragment" >
         <action
-            android:id="@+id/action_searchFragment_to_favoriteFragment"
-            app:destination="@id/favoriteFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/favoriteFragment"
-        android:name="com.example.proyecto.FavoriteFragment"
-        android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" >
+            android:id="@+id/action_news_fragment_to_listFragment"
+            app:destination="@id/listFragment" />
         <action
-            android:id="@+id/action_favoriteFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            android:id="@+id/action_news_fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.proyecto.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
 </navigation>

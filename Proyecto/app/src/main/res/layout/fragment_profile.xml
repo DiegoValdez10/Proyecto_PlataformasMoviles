@@ -5,124 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#323232"
-    tools:context=".ProfileFragment">
+    tools:context=".ui.fragments.ProfileFragment">
 
-        <TextView
-            android:id="@+id/textViewFavoritesTeam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="35sp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/equipos_favoritos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_person_outline_24"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageViewFavoriteTeam1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewFavoritesTeam"
-            tools:ignore="ImageContrastCheck"
-            app:srcCompat="@drawable/escudofcb"
-            tools:src="@tools:sample/avatars" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu cuenta"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <ImageView
-            android:id="@+id/imageViewFavoriteLeague1"
-            android:layout_width="79dp"
-            android:layout_height="88dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewFavoriteLeague"
-            app:srcCompat="@drawable/laliga"
-            tools:src="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/buttonOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#737171"
+        android:text="Cerrar sesion"
+        android:layout_marginTop="@dimen/margin_xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-        <ImageView
-            android:id="@+id/imageViewFavoriteLeague2"
-            android:layout_width="79dp"
-            android:layout_height="88dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewFavoriteLeague1"
-            tools:ignore="ImageContrastCheck"
-            app:srcCompat="@drawable/premier"
-            tools:src="@tools:sample/avatars" />
-
-        <ImageView
-            android:id="@+id/imageViewFavoriteTeam2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toEndOf="@+id/imageViewFavoriteTeam1"
-            app:layout_constraintTop_toBottomOf="@+id/textViewFavoritesTeam"
-            app:srcCompat="@drawable/escudomc"
-            tools:src="@tools:sample/avatars" />
-
-        <ImageView
-            android:id="@+id/imageViewFavoriteTeam3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewFavoriteTeam1"
-            tools:ignore="ImageContrastCheck"
-            app:srcCompat="@drawable/escudoars"
-            tools:src="@tools:sample/avatars" />
-
-        <ImageView
-            android:id="@+id/imageViewFavoriteTeam4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginStart="32dp"
-            app:layout_constraintStart_toEndOf="@+id/imageViewFavoriteTeam3"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewFavoriteTeam1"
-            app:srcCompat="@drawable/escudobvb"
-            tools:ignore="ImageContrastCheck"
-            tools:src="@tools:sample/avatars" />
-
-        <TextView
-            android:id="@+id/textViewFavoriteLeague"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="60dp"
-            android:text="@string/ligas_favoritas"
-            android:textColor="@color/white"
-            android:textSize="35sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewFavoriteTeam3" />
-
-        <TextView
-            android:id="@+id/textViewLeague1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:textSize="@dimen/List"
-            android:textColor="@color/white"
-            android:layout_marginTop="28dp"
-            android:text="@string/insert_league_1"
-            app:layout_constraintStart_toEndOf="@+id/imageViewFavoriteLeague1"
-            app:layout_constraintTop_toTopOf="@+id/imageViewFavoriteLeague1" />
-
-        <TextView
-            android:id="@+id/textViewLeague2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="80dp"
-            android:text="@string/insert_league_2"
-            android:textColor="@color/white"
-            android:textSize="@dimen/List"
-            app:layout_constraintStart_toEndOf="@+id/imageViewFavoriteLeague2"
-            app:layout_constraintTop_toBottomOf="@+id/textViewLeague1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

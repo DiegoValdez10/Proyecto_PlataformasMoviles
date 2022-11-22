@@ -5,10 +5,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewAccountFragment">
+    tools:context=".ui.fragments.NewAccountFragment">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayout_Email"
+        android:id="@+id/inputTextLayout_Email"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/email"
@@ -25,14 +25,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayout_Password"
+        android:id="@+id/inputTextLayout_Password"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium"
         android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputLayout_Email"
+        app:layout_constraintTop_toBottomOf="@id/inputTextLayout_Email"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -51,6 +51,6 @@
         android:layout_marginTop="@dimen/margin_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLayout_Password" />
+        app:layout_constraintTop_toBottomOf="@+id/inputTextLayout_Password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

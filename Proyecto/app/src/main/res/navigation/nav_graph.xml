@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
-
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.proyecto.LoginFragment"
+        android:name="com.example.proyecto.ui.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -16,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/newAccountFragment"
-        android:name="com.example.proyecto.NewAccountFragment"
+        android:name="com.example.proyecto.ui.fragments.NewAccountFragment"
         android:label="fragment_new_account"
         tools:layout="@layout/fragment_new_account" >
         <action

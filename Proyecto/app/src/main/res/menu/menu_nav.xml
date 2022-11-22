@@ -11,12 +11,13 @@
         android:title="Search" />
 
     <item
+        android:id="@+id/page_List"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="List" />
+
+    <item
         android:id="@+id/page_Fav"
         android:icon="@drawable/ic_baseline_favorite_border_24"
         android:title="Favorite" />
 
-    <item
-        android:id="@+id/page_Profile"
-        android:icon="@drawable/ic_baseline_person_outline_24"
-        android:title="Profile" />
 </menu>
