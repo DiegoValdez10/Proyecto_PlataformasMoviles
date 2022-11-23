@@ -1,8 +1,6 @@
 package com.example.proyecto.ui.activity
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
@@ -22,7 +20,7 @@ class SecondActivity : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener{item->
             when(item.itemId){
                 R.id.page_Home -> setFragment(ListFragment())
-                R.id.page_Search -> setFragment(News_fragment())
+                R.id.page_Search -> setFragment(NewsFragment())
                 R.id.page_List -> setFragment(HomeFragment())
                 R.id.page_Fav -> setFragment(ProfileFragment())
 

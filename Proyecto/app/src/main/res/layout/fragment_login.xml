@@ -7,27 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.LoginFragment">
 
-    <TextView
-        android:id="@+id/textView_Name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_xl"
-        android:text="Goalie"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/inputLayout_Email"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/title_image1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayout_Email"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/email"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/title_image1">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

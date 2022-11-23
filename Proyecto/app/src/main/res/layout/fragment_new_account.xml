@@ -7,15 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.NewAccountFragment">
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/title_image1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputTextLayout_Email"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/email"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/title_image1">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -43,6 +55,25 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTextLayout_ConfirmPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:hint="Confirm password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputTextLayout_Password"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button_Account"
         android:layout_width="350dp"
@@ -51,6 +82,6 @@
         android:layout_marginTop="@dimen/margin_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputTextLayout_Password" />
+        app:layout_constraintTop_toBottomOf="@+id/inputTextLayout_ConfirmPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

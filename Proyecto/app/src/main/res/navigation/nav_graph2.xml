@@ -36,6 +36,12 @@
         <action
             android:id="@+id/action_listFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_news_fragment"
+            app:destination="@id/news_fragment" />
+        <action
+            android:id="@+id/action_listFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentArsenal"
@@ -117,10 +123,16 @@
         <action
             android:id="@+id/action_homeFragment_to_news_fragment"
             app:destination="@id/news_fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/news_fragment"
-        android:name="com.example.proyecto.ui.fragments.News_fragment"
+        android:name="com.example.proyecto.ui.fragments.NewsFragment"
         android:label="fragment_news_fragment"
         tools:layout="@layout/fragment_news_fragment" >
         <action
@@ -128,6 +140,18 @@
             app:destination="@id/listFragment" />
         <action
             android:id="@+id/action_news_fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.proyecto.ui.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
 </navigation>
